@@ -21,35 +21,17 @@ project:
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
-  # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
-
-  # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
-
-  # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  inputs:               
+    - clk
+    - ena
+    - rst_n
+    - Number to test
+# A description of what the outputs do (e.g. status LED, SPI MISO, etc)
+  outputs:
+    - Process indicator (busy bit)
+# A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
+  bidirectional:
+    - Number of iterations to reach 1 (8 bits number)
 
 # Do not change!
 yaml_version: 6
